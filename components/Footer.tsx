@@ -1,7 +1,8 @@
 import React from 'react';
 import { PageView } from '../types';
-import { LOGO_URL, CONTACT_INFO } from '../constants';
+import { CONTACT_INFO } from '../constants';
 import { Facebook, Instagram, Linkedin, Twitter, MapPin, Phone, Mail } from 'lucide-react';
+import Logo from './Logo';
 
 interface FooterProps {
   onNavigate: (page: PageView) => void;
@@ -15,8 +16,8 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
           
           {/* Brand Column */}
           <div className="space-y-6">
-            <div className="bg-white/10 p-3 rounded-lg inline-block w-fit">
-               <img src={LOGO_URL} alt="Primepeak Logo" className="h-10 w-auto brightness-0 invert" />
+            <div className="inline-block w-fit">
+               <Logo isLight={true} />
             </div>
             <p className="text-gray-300 text-sm leading-relaxed">
               Helping brands create memorable impressions through customized promotional solutions and premium corporate gifts.

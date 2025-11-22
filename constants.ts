@@ -1,8 +1,5 @@
 import { ProductItem, ServiceItem, TeamMember } from './types';
 
-// Logo URL from requirements
-export const LOGO_URL = "https://i.ibb.co/2NnwNcT/Primepeak-Logo.png";
-
 export const NAV_LINKS = [
   { label: 'Home', value: 'HOME' },
   { label: 'About Us', value: 'ABOUT' },
