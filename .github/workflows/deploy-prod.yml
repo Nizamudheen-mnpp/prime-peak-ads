@@ -2,8 +2,8 @@ name: Deploy Production (Vite React App)
 
 on:
   push:
-    branches: ["prod"]   # ONLY runs when pushing to prod branch
-  workflow_dispatch:      # optional: allows manual trigger
+    branches: ["prod"]     # Runs only on prod branch
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -15,14 +15,13 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
-          node-version: 18
-          cache: npm
+          node-version: 18   # Removed cache line
 
       - name: Install dependencies
         run: npm install
