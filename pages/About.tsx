@@ -37,7 +37,7 @@ const About: React.FC = () => {
               Our approach is simple: we listen to your needs, understand your brand identity, and deliver solutions that leave a lasting impact. From bespoke executive gifts to large-scale event giveaways, we handle it all with precision and care.
             </p>
             
-            <div className="grid grid-cols-2 gap-6">
+            {/* <div className="grid grid-cols-2 gap-6">
               <div className="border-l-4 border-prime-orange pl-4">
                 <h4 className="text-3xl font-bold text-prime-blue">10+</h4>
                 <p className="text-gray-500 text-sm uppercase">Years Experience</p>
@@ -46,7 +46,7 @@ const About: React.FC = () => {
                 <h4 className="text-3xl font-bold text-prime-blue">500+</h4>
                 <p className="text-gray-500 text-sm uppercase">Happy Clients</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
@@ -108,7 +108,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-prime-blue text-white">
+      <section className="py-20 bg-prime-blue text-white" hidden>
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
              <h2 className="text-3xl md:text-4xl font-bold">Meet Our Team</h2>

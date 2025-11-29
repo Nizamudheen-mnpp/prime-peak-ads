@@ -1,3 +1,4 @@
+
 export enum PageView {
   HOME = 'HOME',
   ABOUT = 'ABOUT',
@@ -14,7 +15,7 @@ export interface ProductItem {
 export interface ServiceItem {
   title: string;
   description: string;
-  iconName: string;
+  imageUrl: string;
 }
 
 export interface TeamMember {
