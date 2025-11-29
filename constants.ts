@@ -62,22 +62,22 @@ export const SERVICES: ServiceItem[] = [
   {
     title: "3D Signage",
     description: "Custom-designed 3D signages that enhance your brand visibility with premium finishes.",
-    imageUrl: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?q=80&w=800&auto=format&fit=crop"
+    imageUrl: "https://www.dlxprint.com/images/signages/3d_aluminum_signage_dubai_01.webp"
   },
   {
     title: "Vinyl Sticker",
     description: "High-quality vinyl stickers for indoor and outdoor branding applications.",
-    imageUrl: "https://images.unsplash.com/photo-1595079676339-1534801fafde?q=80&w=800&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1711337914909-02a8f8e05f30?q=80&w=2062&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     title: "Digital Printing",
     description: "Fast and vibrant digital printing solutions for marketing materials.",
-    imageUrl: "https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=800&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1693031630369-bd429a57f115?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     title: "Vehicle Graphics",
     description: "Eye-catching vehicle wrapping and graphics to turn your fleet into mobile advertising.",
-    imageUrl: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=800&auto=format&fit=crop"
+    imageUrl: "https://images.unsplash.com/photo-1618458715022-a18d229aca79?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
   {
     title: "Promotional Gift Items",

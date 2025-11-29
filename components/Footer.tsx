@@ -44,9 +44,6 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <li>
                 <button onClick={() => onNavigate(PageView.CONTACT)} className="hover:text-prime-orange transition-colors text-sm">Contact Us</button>
               </li>
-              <li>
-                <button className="hover:text-prime-orange transition-colors text-sm">Privacy Policy</button>
-              </li>
             </ul>
           </div>
 
