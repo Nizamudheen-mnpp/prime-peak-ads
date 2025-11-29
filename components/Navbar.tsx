@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
-import { NAV_LINKS } from '../constants';
+import { NAV_LINKS, WHATSAPP_URL } from '../constants';
 import { PageView } from '../types';
 import { Menu, X } from 'lucide-react';
 import Logo from './Logo';
@@ -30,6 +31,10 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
   // Text color logic: White when transparent (on dark hero), Blue when scrolled (on white navbar)
   const textClass = isScrolled ? 'text-prime-blue' : 'text-white';
   
+  const handleGetQuote = () => {
+    window.open(WHATSAPP_URL, '_blank');
+  };
+
   return (
     <nav className={navClass}>
       <div className="container mx-auto px-6 flex justify-between items-center">
@@ -56,7 +61,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
             </button>
           ))}
           <button 
-            onClick={() => onNavigate(PageView.CONTACT)}
+            onClick={handleGetQuote}
             className="bg-prime-orange text-white px-6 py-2.5 rounded-full font-bold hover:bg-prime-blue hover:shadow-lg transition-all duration-300 transform hover:-translate-y-0.5"
           >
             Get a Quote
@@ -91,7 +96,7 @@ const Navbar: React.FC<NavbarProps> = ({ currentPage, onNavigate }) => {
           <hr className="border-gray-200" />
           <button 
             onClick={() => {
-              onNavigate(PageView.CONTACT);
+              handleGetQuote();
               setMobileMenuOpen(false);
             }}
             className="bg-prime-orange text-white w-full py-3 rounded-lg font-bold hover:bg-prime-blue transition-colors"

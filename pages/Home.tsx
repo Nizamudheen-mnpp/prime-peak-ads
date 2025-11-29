@@ -1,23 +1,14 @@
+
 import React from 'react';
 import { PageView } from '../types';
 import { SERVICES, PRODUCTS } from '../constants';
-import { ArrowRight, CheckCircle, Megaphone, Gift, Printer, Calendar, Star } from 'lucide-react';
+import { ArrowRight, CheckCircle } from 'lucide-react';
 
 interface HomeProps {
   onNavigate: (page: PageView) => void;
 }
 
 const Home: React.FC<HomeProps> = ({ onNavigate }) => {
-
-  const getIcon = (name: string) => {
-    switch (name) {
-      case 'Megaphone': return <Megaphone size={32} />;
-      case 'Gift': return <Gift size={32} />;
-      case 'Printer': return <Printer size={32} />;
-      case 'Calendar': return <Calendar size={32} />;
-      default: return <Star size={32} />;
-    }
-  };
 
   return (
     <div className="animate-fade-in">
@@ -35,13 +26,13 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-prime-blue/90"></div>
 
         {/* Content */}
-        <div className="relative container mx-auto px-6 text-center text-white z-10 max-w-4xl">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
-            Creative Advertising & <br/>
-            <span className="text-prime-orange">Premium Corporate Gifts</span>
+        <div className="relative container mx-auto px-6 text-center text-white z-10 max-w-6xl">
+          <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-lg">
+            Transforming Brands Through <br className="hidden md:block" />
+            <span className="text-prime-orange">Signage, Printing & Promotional Gifts</span>
           </h1>
           <p className="text-lg md:text-xl text-gray-200 mb-10 max-w-2xl mx-auto font-light">
-            We help brands create memorable impressions through customized promotional solutions that resonate with your audience.
+            We deliver customized branding solutions—from signage and printing to promotional gifts—that elevate your brand presence.
           </p>
           <button 
             onClick={() => onNavigate(PageView.CONTACT)}
@@ -57,18 +48,31 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <span className="text-prime-orange font-bold uppercase tracking-wider text-sm">What We Do</span>
-            <h2 className="text-3xl md:text-4xl font-bold text-prime-blue mt-2">Our Expertise</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-prime-blue mt-2">Our Services</h2>
             <div className="w-20 h-1 bg-prime-orange mx-auto mt-4 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
             {SERVICES.map((service, index) => (
-              <div key={index} className="bg-prime-cream p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300 group">
-                <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center text-prime-orange mb-6 shadow-sm group-hover:bg-prime-orange group-hover:text-white transition-colors duration-300">
-                  {getIcon(service.iconName)}
+              <div 
+                key={index} 
+                className="bg-white rounded-xl overflow-hidden shadow-md hover:shadow-2xl hover:shadow-prime-orange/20 border border-transparent hover:border-prime-orange transition-all duration-500 group"
+              >
+                <div className="h-48 overflow-hidden">
+                  <img 
+                    src={service.imageUrl} 
+                    alt={service.title} 
+                    className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" 
+                  />
                 </div>
-                <h3 className="text-xl font-bold text-prime-blue mb-3">{service.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{service.description}</p>
+                <div className="p-8">
+                  <h3 className="text-xl font-bold text-prime-blue mb-3 group-hover:text-prime-orange transition-colors">
+                    {service.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">
+                    {service.description}
+                  </p>
+                </div>
               </div>
             ))}
           </div>
@@ -76,7 +80,7 @@ const Home: React.FC<HomeProps> = ({ onNavigate }) => {
       </section>
 
       {/* Featured Gift Items */}
-      <section className="py-20 bg-prime-gray">
+      <section className="py-20 bg-prime-gray" hidden>
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row justify-between items-end mb-12">
             <div>

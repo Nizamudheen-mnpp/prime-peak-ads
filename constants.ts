@@ -1,3 +1,4 @@
+
 import { ProductItem, ServiceItem, TeamMember } from './types';
 
 export const NAV_LINKS = [
@@ -59,24 +60,29 @@ export const PRODUCTS: ProductItem[] = [
 
 export const SERVICES: ServiceItem[] = [
   {
-    title: "Advertising Solutions",
-    description: "Strategic ad placements and creative campaigns designed to elevate your brand visibility.",
-    iconName: "Megaphone"
+    title: "3D Signage",
+    description: "Custom-designed 3D signages that enhance your brand visibility with premium finishes.",
+    imageUrl: "https://images.unsplash.com/photo-1542204165-65bf26472b9b?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "Corporate Gift Items",
-    description: "A vast selection of premium, customizable gifts to foster business relationships.",
-    iconName: "Gift"
+    title: "Vinyl Sticker",
+    description: "High-quality vinyl stickers for indoor and outdoor branding applications.",
+    imageUrl: "https://images.unsplash.com/photo-1595079676339-1534801fafde?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "Printing & Branding",
-    description: "High-quality offset and digital printing services for all your marketing collateral.",
-    iconName: "Printer"
+    title: "Digital Printing",
+    description: "Fast and vibrant digital printing solutions for marketing materials.",
+    imageUrl: "https://images.unsplash.com/photo-1562564055-71e051d33c19?q=80&w=800&auto=format&fit=crop"
   },
   {
-    title: "Promotions & Events",
-    description: "End-to-end event marketing support and promotional merchandise management.",
-    iconName: "Calendar"
+    title: "Vehicle Graphics",
+    description: "Eye-catching vehicle wrapping and graphics to turn your fleet into mobile advertising.",
+    imageUrl: "https://images.unsplash.com/photo-1617788138017-80ad40651399?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "Promotional Gift Items",
+    description: "Premium promotional gifts customized with your brand for events and corporate needs.",
+    imageUrl: "https://images.unsplash.com/photo-1549465220-1a8b9238cd48?q=80&w=800&auto=format&fit=crop"
   }
 ];
 
@@ -99,7 +105,9 @@ export const TEAM: TeamMember[] = [
 ];
 
 export const CONTACT_INFO = {
-  phone: "+971 4 123 4567",
-  email: "info@primepeak.ae",
-  address: "1205, Business Bay Tower, Dubai, UAE"
+  phone: "+971 56 2674946",
+  email: "primepeakadvertising@gmail.com",
+  address: "Shabiya 10, Musaffah, Abu Dhabi, UAE"
 };
+
+export const WHATSAPP_URL = "https://wa.me/971562674946?text=Hi%20Primepeak,%20I%20would%20like%20to%20enquire%20about%20your%20services.";
