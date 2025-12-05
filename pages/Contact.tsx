@@ -69,11 +69,9 @@ const Contact: React.FC = () => {
                  <div className="mt-12">
                     <p className="text-sm text-gray-400 mb-4">Follow us for updates:</p>
                     <div className="flex justify-center space-x-4">
-                      {['FB', 'IN', 'LN', 'TW'].map(social => (
-                        <span key={social} className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-prime-orange hover:border-prime-orange transition-colors cursor-pointer text-xs font-bold">
-                          {social}
-                        </span>
-                      ))}
+                      <a href="https://www.instagram.com/primepeakadvertising?utm_source=ig_contact_invite" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full border border-white/20 flex items-center justify-center hover:bg-prime-orange hover:border-prime-orange transition-colors text-xs font-bold">
+                        IN
+                      </a>
                     </div>
                  </div>
                </div>

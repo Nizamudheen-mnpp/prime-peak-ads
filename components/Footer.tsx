@@ -1,7 +1,7 @@
 import React from 'react';
 import { PageView } from '../types';
 import { CONTACT_INFO } from '../constants';
-import { Facebook, Instagram, Linkedin, Twitter, MapPin, Phone, Mail } from 'lucide-react';
+import { Instagram, MapPin, Phone, Mail } from 'lucide-react';
 import Logo from './Logo';
 
 interface FooterProps {
@@ -23,11 +23,9 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               Helping brands create memorable impressions through customized promotional solutions and premium corporate gifts.
             </p>
             <div className="flex space-x-4">
-              {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
-                <a key={i} href="#" className="bg-white/10 p-2 rounded-full hover:bg-prime-orange transition-colors duration-300">
-                  <Icon size={18} className="text-white" />
-                </a>
-              ))}
+              <a href="https://www.instagram.com/primepeakadvertising?utm_source=ig_contact_invite" target="_blank" rel="noopener noreferrer" className="bg-white/10 p-2 rounded-full hover:bg-prime-orange transition-colors duration-300">
+                <Instagram size={18} className="text-white" />
+              </a>
             </div>
           </div>
 
